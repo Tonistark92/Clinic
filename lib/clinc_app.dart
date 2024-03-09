@@ -11,9 +11,9 @@ class ClinicApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    ScreenUtil.init(context, minTextAdapt: true);
     return ScreenUtilInit(
-  
-      designSize: const Size(375, 667),
+      designSize: const Size(375, 812),
       minTextAdapt: true,
       child: MaterialApp(
         title: 'clinic App',
