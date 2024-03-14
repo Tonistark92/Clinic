@@ -9,7 +9,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-    # The following adds the Cupertino Icons font to your application.
+  # For mocking and stubbing
+  mockito: ^5.4.3 
+  # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   #A build system for Dart code generation and modular compilation
@@ -43,7 +45,9 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^2.0.0
-
+    # For generating code (Mocks, etc)
+  build_runner: ^2.4.7
+  test: ^1.24.9
 flutter:
   uses-material-design: true
   # To add assets to your application, add an assets section, like this:
