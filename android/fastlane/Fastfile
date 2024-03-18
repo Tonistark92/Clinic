@@ -4,22 +4,18 @@ platform :android do
   desc "Runs all the tests"
   lane :test do
     sh "flutter test ../../test"
-  end
 
-  desc "Deploy a new version to the Google Play"
-  lane :deploy do
-    gradle(task: "clean assembleRelease")
-    upload_to_play_store
   end
   desc "deploy to firebase"
   lane :firebase_deploy do
+      test
       sh "flutter clean"
       test
       sh "flutter build apk --release --flavor production --target lib/main_production.dart --no-tree-shake-icons"
       release = firebase_app_distribution(
           app: "1:307455058391:android:cf87da1992b043eaf76b92",
-          release_notes: "3ash yasta ! pease XD",
-          firebase_cli_token: "1//03d268hiHqZa_CgYIARAAGAMSNwF-L9IrKbeDpiDtQgP74_ckzwzSyrMVs6nxV8WbZAgolOIinPs82HUri8zculXtKWvRdv5QtdM",
+          release_notes: "3ash yasta ! used github actions XD",
+          firebase_cli_token: "ENV["FIREBASE_CLI_TOKEN"]",
           android_artifact_type: "APK",
           android_artifact_path: "../build/app/outputs/flutter-apk/app-production-release.apk",
           
