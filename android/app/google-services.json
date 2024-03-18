@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "307455058391",
+    "project_id": "flutter-clinic-70722",
+    "storage_bucket": "flutter-clinic-70722.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:307455058391:android:cf87da1992b043eaf76b92",
+        "android_client_info": {
+          "package_name": "com.example.clinic"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6AxSKSKAMFEFq33TRnTsGKV2LdPKNBjA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
