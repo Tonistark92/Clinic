@@ -5,8 +5,8 @@ import '../../features/home/ui/home_screen.dart';
 import '../../features/login/domain/cubit/login_cubit.dart';
 import '../../features/login/ui/login_screen.dart';
 import '../../features/onboarding/ui/onboarding_screen.dart';
-import '../../features/signin/domain/cubit/sign_up_cubit.dart';
-import '../../features/signin/ui/screens/sign_up_screen.dart';
+import '../../features/signup/domain/cubit/sign_up_cubit.dart';
+import '../../features/signup/ui/screens/sign_up_screen.dart';
 import '../di/dependency_injection.dart';
 import 'routes.dart';
 

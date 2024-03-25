@@ -4,8 +4,9 @@ import 'package:get_it/get_it.dart';
 
 import '../../features/login/data/repos/login_repo.dart';
 import '../../features/login/domain/cubit/login_cubit.dart';
-import '../../features/signin/data/repos/sign_up_repo.dart';
-import '../../features/signin/domain/cubit/sign_up_cubit.dart';
+
+import '../../features/signup/data/repos/sign_up_repo.dart';
+import '../../features/signup/domain/cubit/sign_up_cubit.dart';
 import '../networking/api_service.dart';
 import '../networking/dio_factory.dart';
 
